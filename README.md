@@ -1,5 +1,17 @@
 # Arduino Projects
 
+# Backup Arduino Hex Dump
+https://forum.arduino.cc/index.php?topic=422676.0
+
+
+"C:\Program Files (x86)\Arduino\hardware\tools\avr/bin/avrdude" -C"C:\Program Files (x86)\Arduino\hardware\tools\avr/etc/avrdude.conf" -c arduino -P com3 -p atmega328p   -Uflash:r:code.hex:i
+
+
+"C:\Program Files (x86)\Arduino\hardware\tools\avr/bin/avrdude" -C"C:\Program Files (x86)\Arduino\hardware\tools\avr/etc/avrdude.conf" -v -patmega328p -carduino -PCOM4 -b115200 -D   -Uflash:w:code.hex:i
+pause
+
+ 
+
 ## Terrabee Sensors
 Connection for I2C/Arduino With TeraRanger Evo family (Evo 60m | Evo 3m | Evo 600Hz | Evo Mini)
 ![](https://raw.githubusercontent.com/gazzenger/arduino-projects/master/i2card.jpeg)
